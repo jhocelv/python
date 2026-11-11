@@ -68,7 +68,7 @@ class Enemy(GameSprite):
     def update(self):
         self.rect.y += self.speed
         global lost
-        # desaparece si alcanza el borde de la pantalla
+        # desaparece si alcanza el borde de la pantal
         if self.rect.y > win_height:
             self.rect.x = randint(80, win_width - 80)
             self.rect.y = 0
